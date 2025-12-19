@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { useState } from "react";
+
 export default function Layout({ children }) {
   const [open, setOpen] = useState(false);
+
+  const close = () => setOpen(false);
+
+  const NavLink = ({ href, children }) => (
+    <Link href={href} className="hover:text-cyan-300" onClick={close}>
+      {children}
+    </Link>
+  );
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
@@ -12,9 +21,11 @@ export default function Layout({ children }) {
             <span className="text-xl font-bold tracking-wide">
               Sejal Engitech Pvt. Ltd.
             </span>
-            <span className="text-xs text-slate-400">Alambana Tech Group</span>
+            <span className="text-xs text-slate-400">
+              IT Services • Since 2011
+            </span>
           </div>
-          {/* Mobile menu button */}
+
           {/* Mobile menu button */}
           <button
             type="button"
@@ -43,66 +54,48 @@ export default function Layout({ children }) {
             </div>
           </button>
 
-          <nav className="hidden sm:flex gap-6 text-sm">
-            <Link href="/" className="hover:text-cyan-300">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-cyan-300">
-              About
-            </Link>
-            <Link href="/services" className="hover:text-cyan-300">
-              Services
-            </Link>
-            <Link href="/projects" className="hover:text-cyan-300">
-              Projects
-            </Link>
-            <Link href="/contact" className="hover:text-cyan-300">
-              Contact
-            </Link>
+          {/* Desktop nav */}
+          <nav className="hidden sm:flex items-center gap-6 text-sm">
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/about">About</NavLink>
+            <NavLink href="/services">IT Services</NavLink>
+            <NavLink href="/projects">Projects</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
+
+            {/* Child site link */}
+            <a
+              href="https://alambanatech.com"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-slate-700 px-3 py-1 text-xs hover:border-cyan-400 hover:text-cyan-300 transition"
+            >
+              Alambana (Training & Digital)
+            </a>
           </nav>
-          {/* Mobile dropdown menu */}
-          {open && (
-            <div className="sm:hidden border-t border-slate-800 bg-slate-900/80">
-              <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 text-sm">
-                <Link
-                  href="/"
-                  className="rounded-md px-2 py-2 hover:bg-slate-800/60 hover:text-cyan-300 transition"
-                  onClick={() => setOpen(false)}
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/about"
-                  className="rounded-md px-2 py-2 hover:bg-slate-800/60 hover:text-cyan-300 transition"
-                  onClick={() => setOpen(false)}
-                >
-                  About
-                </Link>
-                <Link
-                  href="/services"
-                  className="rounded-md px-2 py-2 hover:bg-slate-800/60 hover:text-cyan-300 transition"
-                  onClick={() => setOpen(false)}
-                >
-                  Services
-                </Link>
-                <Link
-                  href="/projects"
-                  className="rounded-md px-2 py-2 hover:bg-slate-800/60 hover:text-cyan-300 transition"
-                  onClick={() => setOpen(false)}
-                >
-                  Projects
-                </Link>
-                <Link
-                  href="/contact"
-                  className="rounded-md px-2 py-2 hover:bg-slate-800/60 hover:text-cyan-300 transition"
-                  onClick={() => setOpen(false)}
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
-          )}
         </div>
+
+        {/* Mobile dropdown */}
+        {open && (
+          <div className="sm:hidden border-t border-slate-800 bg-slate-900/80">
+            <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-2 text-sm">
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/about">About</NavLink>
+              <NavLink href="/services">IT Services</NavLink>
+              <NavLink href="/projects">Projects</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
+
+              <a
+                href="https://alambanatech.com"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 rounded-md border border-slate-700 px-3 py-2 text-xs hover:border-cyan-400 hover:text-cyan-300 transition"
+                onClick={close}
+              >
+                Visit Alambana (Training & Digital)
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Page content */}
@@ -112,21 +105,20 @@ export default function Layout({ children }) {
       <footer className="mt-10 border-t border-slate-800 bg-slate-900/80">
         <div className="max-w-6xl mx-auto px-4 py-4 text-xs md:text-sm text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
           <span>
-            © {new Date().getFullYear()} Sejal Engitech &amp; Alambana Tech. All
-            rights reserved.
+            © {new Date().getFullYear()} Sejal Engitech Pvt. Ltd. All rights
+            reserved.
           </span>
           <span className="text-slate-500">
-            IT Services • Training • Digital Marketing
+            For Training & Digital services:{" "}
+            <a
+              href="https://alambanatech.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-cyan-300 hover:underline"
+            >
+              alambanatech.com
+            </a>
           </span>
-          <div className="flex gap-4 text-slate-500">
-            <Link href="/privacyPolicy" className="hover:text-cyan-300">
-              Privacy Policy
-            </Link>
-            <span aria-hidden="true">•</span>
-            <Link href="/termsOfService" className="hover:text-cyan-300">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </footer>
     </div>

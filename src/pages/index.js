@@ -6,32 +6,31 @@ export default function Home() {
     <Layout>
       <>
         <Head>
-          <title>Sejal Engitech | Alambana Tech</title>
+          <title>Sejal Engitech Pvt. Ltd. | IT Services</title>
           <meta
             name="description"
-            content="IT Services, Training, and Digital Marketing by Sejal Engitech and Alambana Tech."
+            content="Sejal Engitech Pvt. Ltd. provides IT services for businesses: software development, apps, web design, networking, installation, and cyber security."
           />
         </Head>
 
         <main className="min-h-screen bg-slate-950 text-slate-50">
-          {/* Hero section */}
           <section className="max-w-6xl mx-auto px-4 py-16 grid gap-10 md:grid-cols-2 items-center">
             <div>
               <p className="text-sm font-semibold text-cyan-300 uppercase tracking-[0.2em] mb-3">
-                IT • Training • Digital
+                Sejal Engitech Pvt. Ltd.
               </p>
+
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                We simplify your business needs
+                IT services that simplify your business
                 <span className="block text-cyan-300">
-                  and help your business prosper.
+                  and help you grow faster.
                 </span>
               </h1>
+
               <p className="text-slate-300 text-sm md:text-base mb-6">
-                We are a bunch of IT and Marketing graduates here to simplify
-                your business needs and help your business prosper. We provide
-                all kinds of services related to IT and Digital Marketing,
-                including handling your social media accounts and posting on
-                your behalf.
+                We help businesses with end-to-end IT services including
+                software development, app development, web designing, networking,
+                hardware/software installation, and cyber security.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-4">
@@ -45,47 +44,55 @@ export default function Home() {
                   href="/services"
                   className="px-5 py-2.5 rounded-full border border-slate-600 text-sm hover:border-cyan-400 hover:text-cyan-300 transition"
                 >
-                  View Services
+                  Explore IT Services
                 </a>
               </div>
 
               <p className="text-xs text-slate-400">
-                Primary actions: Enquiry form • Call / WhatsApp • Email RFQ
+                For Training & Digital services, visit{" "}
+                <a
+                  href="https://alambanatech.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-cyan-300 hover:underline"
+                >
+                  alambanatech.com
+                </a>
+                .
               </p>
             </div>
 
-            {/* Right side: three entities */}
             <div className="grid gap-4">
-              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-                <h2 className="text-sm font-semibold text-cyan-300 mb-1">
-                  Sejal Engitech Private Limited
+              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                <h2 className="text-sm font-semibold text-cyan-300 mb-2">
+                  Our IT Services
                 </h2>
-                <p className="text-xs text-slate-300">
-                  IT services: software and app development, web design, video,
-                  networking, hardware and software installation, and cyber
-                  security.
-                </p>
+                <ul className="grid gap-2 text-xs md:text-sm text-slate-200 md:grid-cols-2">
+                  <li>Software Development</li>
+                  <li>App Development</li>
+                  <li>Web Designing</li>
+                  <li>Networking</li>
+                  <li>Installation & Support</li>
+                  <li>Cyber Security</li>
+                </ul>
               </div>
 
-              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-                <h2 className="text-sm font-semibold text-emerald-300 mb-1">
-                  Alambana Edutech / Alambana Academy
+              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+                <h2 className="text-sm font-semibold text-emerald-300 mb-2">
+                  Need Training or Digital Marketing?
                 </h2>
-                <p className="text-xs text-slate-300">
-                  Training institute: AI, data analysis, machine learning,
-                  robotics, Python, Excel, animation, cyber security, web and
-                  graphic design, and accounting.
+                <p className="text-xs md:text-sm text-slate-300 mb-3">
+                  Those services are handled under our Alambana brand with
+                  dedicated details and offerings.
                 </p>
-              </div>
-
-              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-                <h2 className="text-sm font-semibold text-fuchsia-300 mb-1">
-                  Alambana Digital
-                </h2>
-                <p className="text-xs text-slate-300">
-                  Digital work: AI story videos and digital marketing, starting
-                  with campaigns like SR Healthcare advertisement.
-                </p>
+                <a
+                  href="https://alambanatech.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex px-4 py-2 rounded-full border border-slate-700 text-xs hover:border-emerald-300 hover:text-emerald-300 transition"
+                >
+                  Visit Alambana Tech
+                </a>
               </div>
             </div>
           </section>
