@@ -22,7 +22,7 @@ export default function Layout({ children }) {
               Sejal Engitech Pvt. Ltd.
             </span>
             <span className="text-xs text-slate-400">
-              IT Services • Since 2011
+              IT Services • Since 2014
             </span>
           </div>
 
@@ -119,6 +119,15 @@ export default function Layout({ children }) {
               alambanatech.com
             </a>
           </span>
+          <div className="flex gap-4 text-slate-500">
+            <Link href="/privacyPolicy" className="hover:text-cyan-300">
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link href="/termsOfService" className="hover:text-cyan-300">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
