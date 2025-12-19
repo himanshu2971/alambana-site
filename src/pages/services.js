@@ -24,17 +24,60 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
-              <div className="grid gap-3 text-sm md:text-base text-slate-200 md:grid-cols-2">
-                <span>Software Development</span>
-                <span>App Development – School Bus App</span>
-                <span>Web Designing</span>
-                <span>Video for Ads or YouTube</span>
-                <span>Networking</span>
-                <span>Hardware and Software Installation</span>
-                <span>Cyber Security</span>
-              </div>
-            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">Software Development</h3>
+    <p className="text-slate-300 text-sm">
+      Custom software to automate workflows, reduce manual effort, and improve reliability.
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">App Development</h3>
+    <p className="text-slate-300 text-sm">
+      Mobile apps built for speed, usability, and real business outcomes (including your School Bus App).
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">Web Designing</h3>
+    <p className="text-slate-300 text-sm">
+      Modern, responsive websites that look premium and convert visitors into leads.
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">Networking</h3>
+    <p className="text-slate-300 text-sm">
+      Secure, stable networks with clean setup, monitoring guidance, and best practices.
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">Hardware & Software Installation</h3>
+    <p className="text-slate-300 text-sm">
+      Smooth installations, upgrades, and troubleshooting for office and small enterprise setups.
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <h3 className="font-semibold text-cyan-300 mb-1">Cyber Security</h3>
+    <p className="text-slate-300 text-sm">
+      Basic hardening, access control, backups, and security checks to reduce business risk.
+    </p>
+  </div>
+
+  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4 md:col-span-2">
+    <h3 className="font-semibold text-cyan-300 mb-1">Video for Ads / YouTube</h3>
+    <p className="text-slate-300 text-sm">
+      Product explainers, promos, and business videos that support your marketing and branding.
+    </p>
+    <p className="text-xs text-slate-400 mt-1">
+      For full digital marketing packages, visit alambanatech.com.
+    </p>
+  </div>
+</div>
+
 
             <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
               <h2 className="text-lg font-semibold mb-2 text-emerald-300">
