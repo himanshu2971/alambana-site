@@ -159,10 +159,10 @@ export default function Contact() {
                 <p className="text-slate-200">
                   Email:{" "}
                   <a
-                    href="mailto:himanshushourabh@gmail.com"
+                    href="mailto:info.sejalengitech@gmail.com"
                     className="text-cyan-300 hover:underline"
                   >
-                    himanshushourabh@gmail.com
+                    info.sejalengitech@gmail.com
                   </a>
                 </p>
                 <p className="text-slate-200 mt-3">
