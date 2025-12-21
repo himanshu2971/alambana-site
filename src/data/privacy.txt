@@ -143,7 +143,7 @@ If you are a California resident, you have specific rights regarding your Person
     Right to Non-Discrimination: The right not to receive discriminatory treatment for exercising your CCPA/CPRA rights.
     Right to Limit Use and Disclosure of Sensitive Personal Information: As applicable, the right to limit the use and disclosure of your sensitive personal information.
 
-To make a request under CCPA/CPRA, please contact us at <email here>. You may be required to verify your identity. You may also designate an authorized agent to make a request on your behalf. To opt-out of the selling or sharing of your personal information, please contact us or utilize any designated opt-out links provided on our Services (e.g., a "Do Not Sell or Share My Personal Information" link if implemented).
+To make a request under CCPA/CPRA, please contact us at info.sejalengitech@gmail.com. You may be required to verify your identity. You may also designate an authorized agent to make a request on your behalf. To opt-out of the selling or sharing of your personal information, please contact us or utilize any designated opt-out links provided on our Services (e.g., a "Do Not Sell or Share My Personal Information" link if implemented).
 16. Your EU/EEA Privacy Rights (GDPR)
 
 If you are a resident of the EU/EEA, you have specific rights under the GDPR, as detailed in Section 13, including:
@@ -157,7 +157,7 @@ If you are a resident of the EU/EEA, you have specific rights under the GDPR, as
     Right to withdraw consent
     Right to lodge a complaint with a supervisory authority
 
-To exercise any of these rights, please contact us at <email here>
+To exercise any of these rights, please contact us at info.sejalengitech@gmail.com
 17. California Do Not Track Disclosure (CalOPPA)
 
 Our Services do not currently respond to browser "Do Not Track" signals. However, we offer other ways to opt out of tracking as described in Section 7 (Cookie Management) and Section 15 (California Opt-Outs).
@@ -189,11 +189,11 @@ c. Grievance Officer (As Required by Indian Law)
 In compliance with Section 5(9) of the SPDI Rules:
 
 
-Email: <email here>
+Email: info.sejalengitech@gmail.com
 
 Please direct any grievances specific to the collection, retention, usage, and disclosure of Sensitive Personal Data or Information to the Grievance Officer. For general privacy inquiries, please use the contact details in Section 21.
 21. Contact Us
 
 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
 
-📧 Email: <email here>
+📧 Email: info.sejalengitech@gmail.com
