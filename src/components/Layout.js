@@ -135,7 +135,7 @@ export default function Layout({ children }) {
         href="https://wa.me/919001207105?text=Hi%2C%20I%27m%20interested%20in%20your%20IT%20services."
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-4 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] shadow-lg shadow-black/40 hover:bg-[#1ebe57] transition"
+        className="fixed bottom-18 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] shadow-lg shadow-black/40 hover:bg-[#1ebe57] transition"
         aria-label="Chat on WhatsApp"
       >
         {/* simple WhatsApp icon using SVG */}
